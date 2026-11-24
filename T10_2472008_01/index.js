@@ -22,6 +22,12 @@ document.body.appendChild(renderer.domElement);
 // ===============================================
 // 3D Drawing goes here
 // ===============================================
+// Menggambar kemasan susu piramida menggunakan THREE.TetrahedronGeometr()
+const susu = {
+    geo: new THREE.TetrahedronGeometry(),
+    mat: new THREE.MeshBasicMaterial
+}
+
 // Es krim spehere ada 3 biji
 // AI FIX - ini emang bisa dalem struct tuh manggil variabel di dalem struct dirinya sendiri? biar dapetin variabel dari dalem struktur dirinya sendiri gimana sih? --> Tidak bisa. Harus bikin mesh-nya di luar struct.
 const circTop = {
